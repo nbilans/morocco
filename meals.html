@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Check Password and Confirm Password | CodingLab </title>-->
+    <link rel="stylesheet" href="meals.css">
+    <!-- Fontawesome CDN Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">WELCOME TO MOROCCO !</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="meals.html">Meals</a></li>
+        <li><a href="javascript:window.close();">Exit</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>meals !!</h1><br>
+    <p>Select a meal:</p>
+    <select id="meal-select">
+      <option value="">--Please choose a meal--</option>
+      <option value="52772">Chicken Casserole</option>
+      <option value="52774">Pad See Ew</option>
+      <option value="52788">Flapjack</option>
+      <option value="52804">Poutine</option>
+      <option value="52802">Fish pie</option>
+    </select>
+    <button onclick="getMeal()">Get Meal</button>
+    <div id="meal-list"></div>
+  </div>
+  
+  <script src="meals.js"></script>
+  
+
+</body>
+</html>
